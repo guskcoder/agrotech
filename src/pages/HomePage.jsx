@@ -81,16 +81,22 @@ const HomePage = () => {
               <h3 className="pb-5 text-light">Nossos Produtos</h3>
 
               <div className="row d-flex justify-content-around w-auto">
-                <div className="col-md-3 p-4 bg-light rounded-5 mb-3">
+                <div className="col-md-3 p-4 bg-light rounded-5 mb-3 text-center">
+                  <i className="fas fa-chart-line fa-3x mb-3 text-success"></i>
                   <h5>Gestão de Recursos Financeiros</h5>
+                  <p className="small mt-2">Controle financeiro completo para sua produção agrícola</p>
                 </div>
 
-                <div className="col-md-3 p-4 bg-light rounded-5 mb-3">
+                <div className="col-md-3 p-4 bg-light rounded-5 mb-3 text-center">
+                  <i className="fas fa-cloud-sun-rain fa-3x mb-3 text-primary"></i>
                   <h5>Monitoramento Climático</h5>
+                  <p className="small mt-2">Previsões meteorológicas precisas para o planejamento da safra</p>
                 </div>
 
-                <div className="col-md-3 p-4 bg-light rounded-5 mb-3">
+                <div className="col-md-3 p-4 bg-light rounded-5 mb-3 text-center">
+                  <i className="fas fa-store fa-3x mb-3 text-warning"></i>
                   <h5>Mercado Digital</h5>
+                  <p className="small mt-2">Conectando produtores e compradores sem intermediários</p>
                 </div>
               </div>
 
