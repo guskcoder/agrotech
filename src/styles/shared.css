@@ -1,0 +1,125 @@
+/* Estilos compartilhados entre os componentes */
+
+/* Cores principais */
+:root {
+  --color-green: #307a40;
+  --color-green-dark: #256331;
+  --color-yellow: #FFEB3B;
+  --color-light: #f8f9fa;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.bg-green {
+  background-color: var(--color-green);
+}
+
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+
+/* Estilos para botu00f5es e links */
+#botaolink {
+  color: var(--color-green);
+  border-color: var(--color-green);
+  transition: all 0.3s ease;
+}
+
+#botaolink:hover {
+  background-color: var(--color-green);
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-green-dark);
+  border-color: var(--color-green-dark);
+}
+
+/* Estilos para cards */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para u00edcones */
+.feature-icon {
+  color: var(--color-yellow);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  color: var(--color-yellow);
+  margin-bottom: 20px;
+}
+
+/* Estilos para imagens */
+.rounded-5 {
+  border-radius: 1rem !important;
+}
+
+.company-image {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Estilos para seu00e7u00f5es */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0;
+}
+
+.section-padding {
+  padding: 70px 0;
+}
+
+/* Estilos para textos */
+.about-text {
+  text-align: justify;
+  line-height: 2;
+}
+
+/* Estilos para tags */
+.product-tag {
+  background-color: var(--color-yellow);
+  color: #333;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .hero-section {
+    padding: 50px 0;
+  }
+  
+  .section-padding {
+    padding: 40px 0;
+  }
+}

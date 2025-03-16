@@ -1,0 +1,38 @@
+/* Importando estilos compartilhados */
+@import "./styles/shared.css";
+
+/* Estilos específicos para o App */
+
+/* Estilos personalizados para a página AgroConnect */
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.bg-green {
+  background-color: #307a40;
+}
+
+/* Estilos para botões e links */
+#botaolink {
+  color: #307a40;
+  border-color: #307a40;
+  transition: all 0.3s ease;
+}
+
+#botaolink:hover {
+  background-color: #307a40;
+  color: white;
+}
+
+/* Estilos para imagens arredondadas */
+.rounded-5 {
+  border-radius: 1rem !important;
+}
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}

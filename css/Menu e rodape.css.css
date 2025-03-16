@@ -1,0 +1,28 @@
+/* Variáveis CSS */
+:root {
+    --color-green: #8BC34A;
+    --color-yellow: #FFEB3B;
+    --color-light: #ffffff;
+    --font-body: "Quicksand", sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+.bg-green {
+    background-color: var(--color-green);
+}
+
+.bg-yellow {
+    background-color: var(--color-yellow);
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    border: none;
+}
+
+li a:hover {
+    color: #999 !important;
+}
