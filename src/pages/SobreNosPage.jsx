@@ -9,7 +9,7 @@ const SobreNosPage = () => {
       <section
         className="hero-section text-center text-light p-5"
         style={{
-          background: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agronomia_empresa.jpg)',
+          background: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/agronomia-empresa.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -38,7 +38,11 @@ const SobreNosPage = () => {
             </div>
           </div>
           <div className="col-lg-6">
-            <img src="/images/Empresa.jpg" alt="Empresa" className="company-image img-fluid rounded shadow" />
+            <img 
+              src="/images/empresa.jpg" 
+              alt="Empresa" 
+              className="company-image img-fluid rounded shadow" 
+            />
           </div>
         </div>
       </section>
@@ -52,7 +56,7 @@ const SobreNosPage = () => {
               <div className="card h-100 p-4 text-justify">
                 <div className="card-body">
                   <div className="icon-box">
-                    <i className="bi bi-bullseye"></i>
+                    <i className="fas fa-bullseye"></i>
                   </div>
                   <h3 className="h4 mb-3">Nossa Missão</h3>
                   <p>
@@ -72,7 +76,7 @@ const SobreNosPage = () => {
               <div className="card h-100 p-4 text-justify">
                 <div className="card-body">
                   <div className="icon-box">
-                    <i className="bi bi-eye"></i>
+                    <i className="fas fa-eye"></i>
                   </div>
                   <h3 className="h4 mb-3">Nossa Visão</h3>
                   <p>
@@ -93,19 +97,19 @@ const SobreNosPage = () => {
               <div className="card h-100 p-4 text-center">
                 <div className="card-body">
                   <div className="icon-box">
-                    <i className="bi bi-heart"></i>
+                    <i className="fas fa-heart"></i>
                   </div>
                   <h3 className="h4 mb-3">Nossos Valores</h3>
                   <ul className="list-unstyled text-start">
-                    <li><i className="bi bi-check2-circle text-primary me-2"></i>Inovação Transformadora</li>
-                    <li><i className="bi bi-check2-circle text-primary me-2"></i>Sustentabilidade em Primeiro Lugar</li>
-                    <li><i className="bi bi-check2-circle text-primary me-2"></i>Parceria com o produtor</li>
-                    <li><i className="bi bi-check2-circle text-primary me-2"></i>Acessibilidade e inclusão</li>
-                    <li><i className="bi bi-check2-circle text-primary me-2"></i>Ética e Transparência</li>
-                    <li><i className="bi bi-check2-circle text-primary me-2"></i>Empoderamento do produtor</li>
-                    <li><i className="bi bi-check2-circle text-primary me-2"></i>Compromisso com resultados</li>
-                    <li><i className="bi bi-check2-circle text-primary me-2"></i>Responsabilidade Social e Comunitária</li>
-                    <li><i className="bi bi-check2-circle text-primary me-2"></i>Inspiração para o futuro</li>
+                    <li><i className="fas fa-check-circle text-primary me-2"></i>Inovação Transformadora</li>
+                    <li><i className="fas fa-check-circle text-primary me-2"></i>Sustentabilidade em Primeiro Lugar</li>
+                    <li><i className="fas fa-check-circle text-primary me-2"></i>Parceria com o produtor</li>
+                    <li><i className="fas fa-check-circle text-primary me-2"></i>Acessibilidade e inclusão</li>
+                    <li><i className="fas fa-check-circle text-primary me-2"></i>Ética e Transparência</li>
+                    <li><i className="fas fa-check-circle text-primary me-2"></i>Empoderamento do produtor</li>
+                    <li><i className="fas fa-check-circle text-primary me-2"></i>Compromisso com resultados</li>
+                    <li><i className="fas fa-check-circle text-primary me-2"></i>Responsabilidade Social e Comunitária</li>
+                    <li><i className="fas fa-check-circle text-primary me-2"></i>Inspiração para o futuro</li>
                   </ul>
                 </div>
               </div>
@@ -115,7 +119,11 @@ const SobreNosPage = () => {
           {/* Segunda Imagem */}
           <div className="row align-items-center">
             <div className="col-lg-6 mb-4 mb-lg-0 order-lg-2">
-              <img src="/images/Sobre a empresa.jpg" alt="Nossa Estrutura" className="company-image img-fluid rounded shadow" />
+              <img 
+                src="/images/sobre-empresa.jpg" 
+                alt="Nossa Estrutura" 
+                className="company-image img-fluid rounded shadow" 
+              />
             </div>
             <div className="col-lg-6 order-lg-1">
               <h2 className="mb-4">Nossa Estrutura</h2>
@@ -172,6 +180,28 @@ const SobreNosPage = () => {
         .about-text {
           text-align: justify;
           line-height: 2;
+        }
+        
+        @media (max-width: 768px) {
+          .section-padding {
+            padding: 40px 15px;
+          }
+          
+          .about-text {
+            padding: 0 15px;
+          }
+          
+          .card-body {
+            padding: 15px;
+          }
+          
+          h2, h3 {
+            padding: 0 15px;
+          }
+          
+          .hero-section {
+            padding: 60px 15px;
+          }
         }
       `}</style>
     </>
