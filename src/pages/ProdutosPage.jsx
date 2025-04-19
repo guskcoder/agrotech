@@ -1,6 +1,6 @@
 // src/pages/ProdutosPage.jsx
-import React from 'react';
-import '../App.css';
+import React from "react";
+import "../App.css";
 
 const ProdutosPage = () => {
   return (
@@ -8,7 +8,9 @@ const ProdutosPage = () => {
       {/* Conteúdo da Página */}
       <div className="container py-5">
         <h1 className="text-center mb-3">Nossos Produtos</h1>
-        <p className="text-center mb-5">Soluções digitais integradas para impulsionar o agronegócio</p>
+        <p className="text-center mb-5">
+          Soluções digitais integradas para impulsionar o agronegócio
+        </p>
 
         {/* Produtos */}
         <div className="row g-4 mb-5">
@@ -17,14 +19,31 @@ const ProdutosPage = () => {
               <div className="card-body">
                 <span className="product-tag">Assistência</span>
                 <h3 className="card-title">Consultoria Online</h3>
-                <p className="card-text">Assistência técnica especializada e consultoria agrícola disponível 24/7 através da nossa plataforma digital.</p>
+                <p className="card-text">
+                  Assistência técnica especializada e consultoria agrícola
+                  disponível 24/7 através da nossa plataforma digital.
+                </p>
                 <ul className="list-unstyled">
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Atendimento com especialistas em tempo real</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Diagnóstico remoto de problemas</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Recomendações personalizadas</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Suporte técnico via chat e videoconferência</li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Atendimento com especialistas em tempo real
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Diagnóstico remoto de problemas
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Recomendações personalizadas
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Suporte técnico via chat e videoconferência
+                  </li>
                 </ul>
-                <button className="btn btn-primary w-100">Contratar Serviço</button>
+                <button className="btn btn-primary w-100">
+                  Contratar Serviço
+                </button>
               </div>
             </div>
           </div>
@@ -34,14 +53,31 @@ const ProdutosPage = () => {
               <div className="card-body">
                 <span className="product-tag">Clima</span>
                 <h3 className="card-title">Monitoramento Climático</h3>
-                <p className="card-text">Sistema avançado de monitoramento e previsão climática para otimizar sua produção agrícola.</p>
+                <p className="card-text">
+                  Sistema avançado de monitoramento e previsão climática para
+                  otimizar sua produção agrícola.
+                </p>
                 <ul className="list-unstyled">
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Previsões meteorológicas precisas</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Alertas de condições adversas</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Histórico climático da região</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Recomendações de manejo baseadas no clima</li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Previsões meteorológicas precisas
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Alertas de condições adversas
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Histórico climático da região
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Recomendações de manejo baseadas no clima
+                  </li>
                 </ul>
-                <button className="btn btn-primary w-100">Conhecer Sistema</button>
+                <button className="btn btn-primary w-100">
+                  Conhecer Sistema
+                </button>
               </div>
             </div>
           </div>
@@ -51,14 +87,31 @@ const ProdutosPage = () => {
               <div className="card-body">
                 <span className="product-tag">Marketplace</span>
                 <h3 className="card-title">Mercado Digital Local</h3>
-                <p className="card-text">Plataforma de comercialização digital para conectar produtores locais e compradores.</p>
+                <p className="card-text">
+                  Plataforma de comercialização digital para conectar produtores
+                  locais e compradores.
+                </p>
                 <ul className="list-unstyled">
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Vitrine digital para seus produtos</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Conexão direta com compradores</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Sistema de avaliações e feedback</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Logística integrada</li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Vitrine digital para seus produtos
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Conexão direta com compradores
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Sistema de avaliações e feedback
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Logística integrada
+                  </li>
                 </ul>
-                <button className="btn btn-primary w-100">Acessar Marketplace</button>
+                <button className="btn btn-primary w-100">
+                  Acessar Marketplace
+                </button>
               </div>
             </div>
           </div>
@@ -68,12 +121,27 @@ const ProdutosPage = () => {
               <div className="card-body">
                 <span className="product-tag">Finanças</span>
                 <h3 className="card-title">Gestão Financeira Rural</h3>
-                <p className="card-text">Solução completa para gestão financeira e acesso facilitado a crédito rural.</p>
+                <p className="card-text">
+                  Solução completa para gestão financeira e acesso facilitado a
+                  crédito rural.
+                </p>
                 <ul className="list-unstyled">
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Controle de receitas e despesas</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Análise de viabilidade de crédito</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Acesso a linhas de financiamento</li>
-                  <li><i className="fas fa-check-circle text-success me-2"></i>Relatórios financeiros detalhados</li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Controle de receitas e despesas
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Análise de viabilidade de crédito
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Acesso a linhas de financiamento
+                  </li>
+                  <li>
+                    <i className="fas fa-check-circle me-2 check-icon"></i>
+                    Relatórios financeiros detalhados
+                  </li>
                 </ul>
                 <button className="btn btn-primary w-100">Começar Agora</button>
               </div>
@@ -84,7 +152,7 @@ const ProdutosPage = () => {
         {/* Características */}
         <div className="row text-center mb-5">
           <h2 className="mb-4">Por que escolher a AgroConnect?</h2>
-          
+
           <div className="col-md-3 mb-4">
             <div className="feature-icon">
               <i className="fas fa-hand-holding-heart"></i>
@@ -121,8 +189,12 @@ const ProdutosPage = () => {
         {/* CTA */}
         <div className="text-center mb-5">
           <h2>Pronto para digitalizar sua produção?</h2>
-          <p className="mb-4">Conheça nossas soluções e transforme sua fazenda com tecnologia.</p>
-          <a href="#" className="btn btn-primary btn-lg">Agendar Demonstração Gratuita</a>
+          <p className="mb-4">
+            Conheça nossas soluções e transforme sua fazenda com tecnologia.
+          </p>
+          <a href="#" className="btn btn-primary btn-lg">
+            Agendar Demonstração Gratuita
+          </a>
         </div>
       </div>
 
@@ -131,25 +203,25 @@ const ProdutosPage = () => {
           transform: translateY(-5px);
           transition: transform 0.3s ease;
         }
-        
+
         .btn-primary {
           background-color: #307a40;
           border-color: #307a40;
         }
-        
+
         .btn-primary:hover {
           background-color: #256331;
           border-color: #256331;
         }
-        
+
         .feature-icon {
-          color: #FFEB3B;
+          color: #ffeb3b;
           font-size: 2rem;
           margin-bottom: 1rem;
         }
-        
+
         .product-tag {
-          background-color: #FFEB3B;
+          background-color: #ffeb3b;
           color: #333;
           padding: 0.25rem 0.75rem;
           border-radius: 15px;

@@ -1,7 +1,7 @@
 // src/pages/HomePage.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../App.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 const HomePage = () => {
   return (
@@ -55,10 +55,11 @@ const HomePage = () => {
             <div className="col-md-6 my-3">
               <h3>Nossa História</h3>
               <p className="pb-4">
-                A AgroConnect nasceu da necessidade de apoiar pequenos produtores
-                agrícolas que enfrentam desafios diários para aumentar a sua
-                produtividade. Com um desejo genuíno de fazer a diferença, a
-                AgroConnect foi criada para tornar o mercado mais justo.
+                A AgroConnect nasceu da necessidade de apoiar pequenos
+                produtores agrícolas que enfrentam desafios diários para
+                aumentar a sua produtividade. Com um desejo genuíno de fazer a
+                diferença, a AgroConnect foi criada para tornar o mercado mais
+                justo.
               </p>
 
               <div className="col-md-6 mt-4 text-center">
@@ -81,26 +82,35 @@ const HomePage = () => {
               <h3 className="pb-5 text-light">Nossos Produtos</h3>
 
               <div className="row d-flex justify-content-around w-auto">
-                <div className="col-md-3 p-4 bg-light rounded-5 mb-3 text-center">
-                  <i className="fas fa-chart-line fa-3x mb-3 text-success"></i>
+                <div className="col-md-3 p-4 bg-light rounded-5 mb-3 text-center product-item">
+                  <i className="fas fa-chart-line fa-3x mb-3"></i>
                   <h5>Gestão de Recursos Financeiros</h5>
-                  <p className="small mt-2">Controle financeiro completo para sua produção agrícola</p>
+                  <p className="small mt-2">
+                    Controle financeiro completo para sua produção agrícola
+                  </p>
                 </div>
 
-                <div className="col-md-3 p-4 bg-light rounded-5 mb-3 text-center">
-                  <i className="fas fa-cloud-sun-rain fa-3x mb-3 text-primary"></i>
+                <div className="col-md-3 p-4 bg-light rounded-5 mb-3 text-center product-item">
+                  <i className="fas fa-cloud-sun-rain fa-3x mb-3"></i>
                   <h5>Monitoramento Climático</h5>
-                  <p className="small mt-2">Previsões meteorológicas precisas para o planejamento da safra</p>
+                  <p className="small mt-2">
+                    Previsões meteorológicas precisas para o planejamento da
+                    safra
+                  </p>
                 </div>
 
-                <div className="col-md-3 p-4 bg-light rounded-5 mb-3 text-center">
-                  <i className="fas fa-store fa-3x mb-3 text-warning"></i>
+                <div className="col-md-3 p-4 bg-light rounded-5 mb-3 text-center product-item">
+                  <i className="fas fa-store fa-3x mb-3"></i>
                   <h5>Mercado Digital</h5>
-                  <p className="small mt-2">Conectando produtores e compradores sem intermediários</p>
+                  <p className="small mt-2">
+                    Conectando produtores e compradores sem intermediários
+                  </p>
                 </div>
               </div>
 
-              <Link to="/produtos" id="botaolink" className="btn btn-outline bg-light mt-5">Mais informações</Link>
+              <Link to="/produtos" className="btn btn-light mt-5">
+                Mais informações
+              </Link>
             </div>
           </div>
         </div>

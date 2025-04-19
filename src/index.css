@@ -11,23 +11,81 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #4caf50;
+  --secondary-color: #2e7d32;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #f8f9fa;
+  --border-color: #dee2e6;
+  --navbar-bg: #4caf50;
+  --navbar-text: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: #dee2e6;
+  --input-text: #333333;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+[data-theme="dark"] {
+  --primary-color: #66bb6a;
+  --secondary-color: #81c784;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --border-color: #333333;
+  --navbar-bg: #1e1e1e;
+  --navbar-text: #ffffff;
+  --input-bg: #2d2d2d;
+  --input-border: #404040;
+  --input-text: #ffffff;
 }
 
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+body,
+body.light {
+  --primary-color: #4caf50;
+  --secondary-color: #2e7d32;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #f8f9fa;
+  --border-color: #dee2e6;
+  --navbar-bg: #4caf50;
+  --navbar-text: #ffffff;
+  --input-bg: #ffffff;
+  --input-border: #dee2e6;
+  --input-text: #333333;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark {
+  --primary-color: #66bb6a;
+  --secondary-color: #81c784;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --border-color: #333333;
+  --navbar-bg: #1e1e1e;
+  --navbar-text: #ffffff;
+  --input-bg: #2d2d2d;
+  --input-border: #404040;
+  --input-text: #ffffff;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+html,
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  padding: 0;
   min-height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1 {
@@ -65,4 +123,145 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.navbar {
+  background-color: var(--navbar-bg) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--navbar-text) !important;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.form-control {
+  background-color: var(--input-bg);
+  border-color: var(--input-border);
+  color: var(--input-text);
+}
+
+.form-control:focus {
+  background-color: var(--input-bg);
+  border-color: var(--primary-color);
+  color: var(--input-text);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0;
+}
+
+/* Estilos para o Footer */
+.footer-link {
+  color: var(--text-color) !important;
+  opacity: 0.8;
+}
+
+.footer-link:hover {
+  opacity: 1;
+  color: var(--primary-color) !important;
+}
+
+.footer-copyright {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+/* Estilos para os cards de produtos */
+.bg-light {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color);
+}
+
+.bg-green {
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+}
+
+/* Garantir que os ícones dos produtos sejam visíveis */
+.fa-chart-line,
+.fa-cloud-sun-rain,
+.fa-store,
+.fa-hand-holding-heart,
+.fa-mobile-alt,
+.fa-shield-alt,
+.fa-sync {
+  color: var(--primary-color) !important;
+}
+
+/* Estilos para os cards da página de produtos */
+.product-card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-tag {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para os cards de produtos na HomePage */
+.product-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-light {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.btn-light:hover {
+  background-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.check-icon {
+  color: var(--primary-color) !important;
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
