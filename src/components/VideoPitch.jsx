@@ -11,9 +11,10 @@ const VideoPitch = () => {
             <p className="text-justify">
               Nosso vídeo de apresentação está disponível no YouTube. Você pode
               assisti-lo para conhecer melhor nosso projeto e entender como
-              estamos trabalhando para promover a agricultura sustentável. Não
-              perca essa oportunidade de se inspirar e se engajar na causa
-              sustentável! Clique no botão para assistir. 🌱🌍📹
+              estamos trabalhando para impulsionar o avanço tecnológico na
+              agricultura. Não perca essa oportunidade de se inspirar e se
+              engajar na transformação do campo com inovação! Clique no botão
+              para assistir. 🌱🌍📹
             </p>
             <a
               href="https://www.youtube.com/watch?v=qA9GxgDMGNU"
