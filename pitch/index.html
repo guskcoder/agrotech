@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoEnergia Verde - Conscientização e Gamificação</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("images/imagem_banner.jpg");
+        background-size: cover;
+        color: white;
+        padding: 100px 0;
+      }
+
+      .game-card {
+        transition: transform 0.3s;
+      }
+
+      .game-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .eco-points {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(40, 167, 69, 0.9);
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        z-index: 1000;
+      }
+
+      .nav-link.active {
+        color: #28a745 !important;
+        font-weight: bold;
+      }
+
+      :root {
+        --color-green: #28a745;
+      }
+
+      .bg-green {
+        background-color: var(--color-green);
+      }
+
+      .text-justify {
+        text-align: justify;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">🌿 EcoEnergia Verde</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Sobrenos-GS.html">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Fontes Renováveis.html">Conscientização</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quiz.html">Gamificação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="hero text-center">
+      <div class="container">
+        <h1 class="display-4">Energia Verde para um Futuro Sustentável</h1>
+        <p class="lead">
+          Aprenda sobre energia sustentável de forma divertida e interativa
+        </p>
+      </div>
+    </section>
+
+    <section id="sobre" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="images/imagem_sobrenos.jpg"
+              alt="Equipe"
+              class="img-fluid rounded w-75 h-auto"
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Nossa Missão</h3>
+            <p class="text-justify">
+              Somos uma equipe dedicada a promover a conscientização sobre
+              energia verde através de métodos inovadores e interativos. Nossa
+              missão é educar e inspirar pessoas a adotarem práticas
+              sustentáveis em suas vidas diárias.
+            </p>
+            <a href="Sobrenos-GS.html">
+              <button class="btn btn-outline-success">Saiba Mais</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conscientizacao" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Fontes de Energia Renovável</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/imagemenergia_solar.jpg"
+                class="card-img-top"
+                alt="Energia Solar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Energia Solar</h5>
+                <p class="card-text">
+                  Descubra como a energia solar pode transformar sua casa e o
+                  planeta.
+                </p>
+                <a href="Fontes Renováveis.html">
+                  <button class="btn btn-success">Aprenda Mais</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/imagemenergia_eolica.jpg"
+                class="card-img-top"
+                alt="Energia Eólica"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Energia Eólica</h5>
+                <p class="card-text">
+                  Explore o poder dos ventos na geração de energia limpa.
+                </p>
+                <a href="Fontes Renováveis.html">
+                  <button class="btn btn-success">Descubra</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/imagemenergia_biomassa.jpg"
+                class="card-img-top"
+                alt="Biomassa"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Biomassa</h5>
+                <p class="card-text">
+                  Entenda como resíduos orgânicos podem gerar energia
+                  sustentável.
+                </p>
+                <a href="Fontes Renováveis.html">
+                  <button class="btn btn-success">Explore</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gamificacao" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Gamificação</h2>
+        <div class="row">
+          <div class="col-md-6 offset-md-3 mb-4">
+            <div class="card game-card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Quiz Energia Verde</h5>
+                <p class="card-text">
+                  Teste seus conhecimentos sobre energia sustentável.
+                </p>
+                <a href="quiz.html" target="_blank"
+                  ><button class="btn btn-success" onclick="startQuiz()">
+                    Jogar Quiz
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videopitch" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Vídeo Pitch</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Link do Video</h3>
+            <p class="text-justify">
+              Nosso vídeo de apresentação está disponível no YouTube. Você pode
+              assisti-lo para conhecer melhor nosso projeto e entender como
+              estamos trabalhando para promover o uso de energias renováveis.
+              Não perca essa oportunidade de se inspirar e se engajar na causa
+              sustentável! Clique no botão para assitir. 🌱🌍📹
+            </p>
+            <a
+              href="https://www.youtube.com/watch?v=CBSwJT8fpjA"
+              target="_blank"
+            >
+              <button class="btn btn-outline-success">Ver o vídeo</button>
+            </a>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+            <img
+              src="images/imagem_pitch.jpg"
+              alt="Imagem Pitch"
+              class="img-fluid rounded w-50 h-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="grupo" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Integrantes do Grupo</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Matheus Grou Toffolo</p>
+            <p>Gabriel Hamilton Cognialli Bertagnoli</p>
+            <p>Gustavo Henrique</p>
+            <p>João Paulo Cavalcanti Rodrigues Ferreira</p>
+            <p>Manuel Vieira da Costa Neto</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Fale Conosco</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+        <p>© 2024 EcoEnergia Verde. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let points = 0;
+
+      function addPoints(value) {
+        points += value;
+        document.getElementById("points").textContent = points;
+      }
+
+      function startQuiz() {
+        const questions = [
+          {
+            question: "Qual fonte de energia é considerada a mais limpa?",
+            options: ["Carvão", "Solar", "Petróleo", "Gás Natural"],
+            correct: 1,
+          },
+
+          {
+            question:
+              "Qual destas fontes de energia é proveniente do calor do centro da Terra?",
+            options: [
+              "Energia Hidrelétrica",
+              "Energia Solar",
+              "Energia Termoelétrica",
+              "Energia Geotérmica",
+            ],
+            correct: 3,
+          },
+
+          {
+            question: "Qual é a principal fonte de energia eólica?",
+            options: ["Ondas do mar", "Luz do sol", "Ventos", "Calor da terra"],
+            correct: 2,
+          },
+          // Adicione mais perguntas aqui
+        ];
+      }
+
+      function startSimulator() {
+        alert("Simulador iniciado! Calcule sua economia de energia!");
+        // Implementação simplificada
+        addPoints(25);
+      }
+
+      function handleSubmit(event) {
+        event.preventDefault();
+        alert("Mensagem enviada com sucesso! Obrigado pelo contato.");
+        document.getElementById("contactForm").reset();
+        addPoints(10);
+        return false;
+      }
+
+      // Navegação suave
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

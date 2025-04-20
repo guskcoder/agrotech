@@ -277,3 +277,12 @@ button:focus-visible {
 .navbar-toggler {
   border-color: var(--border-color) !important;
 }
+
+/* Estilos para a seção de Vídeo Pitch */
+#videopitch {
+  background-color: var(--card-bg);
+}
+
+.text-justify {
+  text-align: justify;
+}

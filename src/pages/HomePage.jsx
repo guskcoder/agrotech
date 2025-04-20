@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
+import VideoPitch from "../components/VideoPitch";
 
 const HomePage = () => {
   return (
@@ -73,6 +74,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Seção Vídeo Pitch */}
+      <VideoPitch />
 
       {/* Seção Nossos Produtos */}
       <section className="container-fluid mb-5 py-5 bg-green">
